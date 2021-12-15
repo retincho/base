@@ -49,9 +49,16 @@
   </div>
 </nav>
 <div>
-  <p class="notice"><%= notice %></p>
-  <p class="alert"><%= alert %></p>
-  <%= link_to 'Login', new_user_session_path %>
+ <% flash.each do |key, value| %>
+    <div class="alert alert-<%= key %> alert-dismissable">
+        
+        <div class="alert alert-warning" role="alert">
+   <%= value %>
+</div>
+       
+    </div>
+<% end %>
+  
     <%= yield %>
 </div>
   </body>
