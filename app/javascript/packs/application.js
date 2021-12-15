@@ -7,7 +7,7 @@ import Rails from "@rails/ujs"
 import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
-
+global.toastr = require('toastr')
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
@@ -36,3 +36,23 @@ document.addEventListener("turbolinks:load", () => {
     })
 })
 
+toastr.options = {
+    'closeButton': false,
+    'debug': false,
+    'newestOnTop': false,
+    'progressBar': false,
+    'positionClass': 'toast-top-right',
+    'preventDuplicates': true,
+    'preventOpenDuplicates': true,
+    'onclick': null,
+    'showDuration': '0',
+    'hideDuration': '0',
+    'timeOut': '0',
+    'extendedTimeOut': '0',
+    'tapToDismiss': true,
+    'showEasing': 'swing',
+    'hideEasing': 'linear',
+    'showMethod': 'fadeIn',
+    'hideMethod': 'fadeOut'
+  }
+  
