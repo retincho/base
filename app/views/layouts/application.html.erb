@@ -9,37 +9,22 @@
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <link rel="stylesheet" href="css/all.min.css">
   </head>
 <body>
   <div class="container">
     <%= render "layouts/flash"%>
   </div>
-  <div>
-    <div class="row">
-      <div class="col-2">
-        <nav class="nav flex-column">
-          <a class="nav-link active" aria-current="page" href="#">Active</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link" href="#">Link</a>
-          <a class="nav-link disabled">Disabled</a>
-        </nav>
-      </div>
-      <div class="col-sm-9">
-        <div class="row">
-          <div class="col">
-            <%= yield %> 
-          
-          </div>
-
-        </div>
-      </div>
+  <div id="content-wrapper" class="d-flex">
+    <div id="sidebar-container" class="bg-light border-rigth">
+       <div class="logo">
+         Sistema Base
+       </div> 
+       <div class="menu-list-group-flash">
+         <a class="list-group-item list-group-item-action bg-light p-3 border-0" href="#"><i class="fas fa-home lead mr-5"></i> Home</a>
+       </div>
     </div>
   </div>
-
-
-
-         
-    
   
 
 </body>

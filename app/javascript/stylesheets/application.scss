@@ -1,3 +1,15 @@
 @import "~bootstrap/scss/bootstrap";
 @import "toastr";
 
+#sidebar-container {
+    min-height: 100vh;
+    /*margin-left: -18rem;*/
+    transition: margin .25s ease-in-out;
+}
+#sidebar-container .menu-list-group-flash {
+    width: 18rem;
+}
+#sidebar-container .logo{
+    padding: .875rem 1.25rem;
+    font-size: 1.2rem;
+}
