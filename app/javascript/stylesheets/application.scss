@@ -10,11 +10,12 @@
 
 #sidebar-container {
     min-height: 100vh;
-    
     transition: margin .25s ease-in-out;
+    
 }
 #sidebar-container .menu{
     width: 18rem;
+    
 }
 #sidebar-container .logo{
     padding: .875rem 1.25rem;
@@ -24,8 +25,7 @@
     background-color: var(--light-blue);
 }
 
-.btn-primary{
-    background-color: rgb(0, 123, 255, .1) !important;
-    border: 0;
-}
 
+.form-check-input {
+    padding-right: 15px;
+}
