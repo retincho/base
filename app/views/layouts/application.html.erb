@@ -3,8 +3,6 @@
   <head>
     <title>Base</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    
-
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
     <%= csrf_meta_tags %>
@@ -16,18 +14,61 @@
     <%= render "layouts/flash"%>
   </div>
   <div id="content-wrapper" class="d-flex">
-    <div id="sidebar-container" class="bg-light border-rigth">
+    <div id="sidebar-container" class="bg-light border-bottom">
        <div class="logo">
-         Sistema Base
+         <h4 class="font-weight-bold mb-0" >Sistema base</h4> 
        </div> 
-       <div class="menu-list-group-flash">
+       <div class="menu list-group-flush">
          <a class="list-group-item list-group-item-action bg-light p-3 border-0" href="#"><i class="fas fa-home"></i> Home</a>
+         <a class="list-group-item list-group-item-action bg-light p-3 border-0" href="#"><i class="fas fa-cannabis"></i> Otras yerbas</a>
+         <a class="list-group-item list-group-item-action bg-light p-3 border-0" href="#"><i class="fas fa-asterisk"></i> Preferencias</a>
+         <a class="list-group-item list-group-item-action bg-light p-3 border-0" href="#"><i class="fas fa-sliders-h"></i> Configuracion</a>
+         <a class="list-group-item list-group-item-action bg-light p-3 border-0" href="#"><i class="fas fa-concierge-bell"></i> Otro</a>
        </div>
+    </div>
+    <div id="page-container"  class="w-100 bg-color-back">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
+        <div class="container-fluid">
+         
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav">
+              
+              <li class="nav-item">
+                <a class="nav-link" href="#">Link</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Martín
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Mi perfil</a></li>
+                  <li><a class="dropdown-item" href="#">Suscripciones</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#">Cerrar secion</a></li>
+                </ul>
+              </li>
+              
+            </ul>
+            
+          </div>
+        </div>
+      </nav>
     </div>
   </div>
   
+  
+  
 
 </body>
+
+
+
 </html>
 
-
+<script>
+  
+ 
+</script>
